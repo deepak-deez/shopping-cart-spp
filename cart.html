@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        .btn {
+            align-content: space-between;
+        }
+        
+        #foo {
+            text-align-last: right;
+        }
+    </style>
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col container-sm bg-primary">
+                <div class="card w-75">
+                    <div class="card-body ">
+                        <h5 class="card-header text-center">Items Available</h5>
+                        <table class="table">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Items</th>
+                                    <th scope="col">price(in Rs.)</th>
+                                    <th scope="col">action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="shopcart">
+                                <tr id="ro">
+                                    <th scope="row"> <img src="redmiy2.jfif" class="img-thumbnail" alt="cabbage">
+                                    </th>
+                                    <td>redmi y2 </td>
+                                    <td id="price" value="8999">8999</td>
+                                    <td> <button type="button" class="btn btn-primary" id="1" onclick="itemadded(1)">Add to cart</button>
+                                    </td>
+                                </tr>
+                                <tr id="ro">
+                                    <th scope="row"> <img src="redmi note 7 pro.jfif" class="img-thumbnail" alt="cabbage">
+                                    </th>
+                                    <td>Redmi Note 7 pro </td>
+                                    <td id="price" value="13999">13999</td>
+                                    <td> <button type="button" class="btn btn-primary" id="2" onclick="itemadded(2)">Add to cart</button></a>
+                                    </td>
+                                </tr>
+                                <tr id="ro">
+                                    <th scope="row"> <img src="redmi6.jfif" class="img-thumbnail" alt="cabbage">
+                                    </th>
+                                    <td>Redmi 6 </td>
+                                    <td id="price" value="7999">7999</td>
+                                    <td> <button type="button" class="btn btn-primary" id="3" onclick="itemadded(3)">Add to cart</button> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+            <div id="mycart" class="col container-sm bg-danger">
+
+                <div class="card-body">
+
+                    <div id="cardy" class="card w-85 py-400 text-center">
+                        <b class="card-header text-center">My Cart</b>
+                        <h5 id="noitems">no items available</h5>
+                        <p id="foo">Total price= Rs.0/-</p>
+
+                    </div>
+                    <button type="button" class="btn btn-success">Checkout</button>
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="cart.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+
+</html>
